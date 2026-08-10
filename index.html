@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPKA Family</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+        header {
+            background: #263238;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 { margin: 0 0 10px; font-size: 42px; }
+        header p { margin: 0; font-size: 18px; }
+        nav {
+            background: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.08);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #263238;
+            font-weight: bold;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            box-shadow: 0 3px 15px rgba(0,0,0,.08);
+        }
+        .family {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+        .person {
+            padding: 20px;
+            border-radius: 12px;
+            background: #eef2f5;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RPKA Family</h1>
+    <p>Rajat • Priyanka • Kaashvi • Aarvi</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#family">Family</a>
+    <a href="#photos">Photos</a>
+</nav>
+
+<main>
+    <section class="card">
+        <h2>Welcome to Our Family Website</h2>
+        <p>
+            Welcome to our personal family space. This website will be used
+            to keep our family memories, photos and special moments in one place.
+        </p>
+    </section>
+
+    <section class="card" id="family">
+        <h2>Our Family</h2>
+        <div class="family">
+            <div class="person"><h3>Rajat</h3><p>Dad</p></div>
+            <div class="person"><h3>Priyanka</h3><p>Mom</p></div>
+            <div class="person"><h3>Kaashvi</h3><p>Family</p></div>
+            <div class="person"><h3>Aarvi</h3><p>Family</p></div>
+        </div>
+    </section>
+
+    <section class="card" id="photos">
+        <h2>Family Photos</h2>
+        <p>Photo albums will be added here soon.</p>
+    </section>
+</main>
+
+<footer>
+    © 2026 RPKA Family
+</footer>
+
+</body>
+</html>
