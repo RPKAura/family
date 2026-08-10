@@ -1,108 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPKA Family</title>
-    <style>
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
-            color: #222;
-        }
-        header {
-            background: #263238;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        header h1 { margin: 0 0 10px; font-size: 42px; }
-        header p { margin: 0; font-size: 18px; }
-        nav {
-            background: white;
-            text-align: center;
-            padding: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,.08);
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #263238;
-            font-weight: bold;
-        }
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 14px;
-            box-shadow: 0 3px 15px rgba(0,0,0,.08);
-        }
-        .family {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
-        }
-        .person {
-            padding: 20px;
-            border-radius: 12px;
-            background: #eef2f5;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #666;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RPKAura | Our Family</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#26304a;background:#fff8fb;line-height:1.6}
+header{min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:40px 20px;background:linear-gradient(135deg,#665cff,#d84fa4 50%,#ff8a65);position:relative;overflow:hidden}
+header:before,header:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.12)}
+header:before{width:320px;height:320px;top:-120px;right:-80px}
+header:after{width:240px;height:240px;bottom:-100px;left:-70px}
+.hero{max-width:850px;position:relative;z-index:1}
+.logo{width:90px;height:90px;margin:0 auto 22px;border-radius:28px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:bold;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.45);box-shadow:0 15px 40px rgba(0,0,0,.18)}
+h1{font-size:clamp(52px,9vw,90px);line-height:1;margin-bottom:18px;letter-spacing:-3px}
+.hero p{font-size:clamp(18px,3vw,25px);margin-bottom:30px}
+.button{display:inline-block;padding:13px 28px;border-radius:30px;background:white;color:#713fc4;text-decoration:none;font-weight:bold;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);text-align:center;padding:15px;box-shadow:0 2px 15px rgba(0,0,0,.08)}
+nav a{color:#4d426d;text-decoration:none;font-weight:bold;margin:0 14px}
+main{max-width:1100px;margin:auto;padding:65px 20px}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:38px;color:#513b8f}
+.section-title p{color:#777}
+.family-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px}
+.card{background:white;border-radius:24px;padding:30px 20px;text-align:center;box-shadow:0 12px 35px rgba(83,55,120,.1);border:1px solid #f0e8f5;transition:.25s}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(83,55,120,.18)}
+.avatar{width:92px;height:92px;margin:0 auto 17px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:32px;font-weight:bold}
+.a1{background:linear-gradient(135deg,#4facfe,#00c6ff)}
+.a2{background:linear-gradient(135deg,#f093fb,#f5576c)}
+.a3{background:linear-gradient(135deg,#43e97b,#38f9d7)}
+.a4{background:linear-gradient(135deg,#fa709a,#fee140)}
+.card h3{font-size:24px;color:#3f355e}
+.card p{color:#777}
+.memory{margin-top:70px;padding:55px 25px;border-radius:30px;text-align:center;color:white;background:linear-gradient(135deg,#ff7eb3,#8b5cf6,#36cfc9);box-shadow:0 18px 45px rgba(100,70,160,.2)}
+.memory h2{font-size:38px;margin-bottom:10px}
+.photo-box{margin-top:25px;min-height:170px;border:2px dashed rgba(255,255,255,.65);border-radius:20px;display:flex;align-items:center;justify-content:center;padding:20px;font-size:18px}
+footer{text-align:center;padding:28px 20px;color:#777;background:white}
+.heart{color:#e84a8a}
+@media(max-width:600px){nav a{margin:0 6px;font-size:14px}h1{letter-spacing:-2px}}
+</style>
 </head>
 <body>
-
-<header>
-    <h1>RPKA Family</h1>
-    <p>Rajat • Priyanka • Kaashvi • Aarvi</p>
+<header id="home">
+<div class="hero">
+<div class="logo">RPKA</div>
+<h1>Our Family</h1>
+<p>Rajat • Priyanka • Kaashvi • Aarvi</p>
+<a class="button" href="#family">Meet Our Family ↓</a>
+</div>
 </header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="#family">Family</a>
-    <a href="#photos">Photos</a>
-</nav>
-
+<nav><a href="#home">Home</a><a href="#family">Family</a><a href="#memories">Memories</a></nav>
 <main>
-    <section class="card">
-        <h2>Welcome to Our Family Website</h2>
-        <p>
-            Welcome to our personal family space. This website will be used
-            to keep our family memories, photos and special moments in one place.
-        </p>
-    </section>
-
-    <section class="card" id="family">
-        <h2>Our Family</h2>
-        <div class="family">
-            <div class="person"><h3>Rajat</h3><p>Dad</p></div>
-            <div class="person"><h3>Priyanka</h3><p>Mom</p></div>
-            <div class="person"><h3>Kaashvi</h3><p>Family</p></div>
-            <div class="person"><h3>Aarvi</h3><p>Family</p></div>
-        </div>
-    </section>
-
-    <section class="card" id="photos">
-        <h2>Family Photos</h2>
-        <p>Photo albums will be added here soon.</p>
-    </section>
+<section id="family">
+<div class="section-title"><h2>Meet the RPKA Family</h2><p>Four names, one beautiful family ❤️</p></div>
+<div class="family-grid">
+<div class="card"><div class="avatar a1">R</div><h3>Rajat</h3><p>Dad</p></div>
+<div class="card"><div class="avatar a2">P</div><h3>Priyanka</h3><p>Mom</p></div>
+<div class="card"><div class="avatar a3">K</div><h3>Kaashvi</h3><p>Our Little Star</p></div>
+<div class="card"><div class="avatar a4">A</div><h3>Aarvi</h3><p>Our Little Sunshine</p></div>
+</div>
+<section class="memory" id="memories">
+<h2>Our Memories ✨</h2><p>Every picture tells a story. Our family photo albums will live here.</p>
+<div class="photo-box">📸 Photo albums coming soon</div>
+</section>
+</section>
 </main>
-
-<footer>
-    © 2026 RPKA Family
-</footer>
-
+<footer>Made with <span class="heart">♥</span> by RPKA Family · © 2026</footer>
 </body>
 </html>
